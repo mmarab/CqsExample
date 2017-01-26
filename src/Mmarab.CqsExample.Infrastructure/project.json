@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Mmarab.CqsExample.Application": "1.0.0-*",
+    "Mmarab.CqsExample.Models": "1.0.0-*",
+    "Microsoft.AspNetCore.Cors": "1.1.0",
+    "Microsoft.AspNetCore.Hosting.Abstractions": "1.1.0",
+    "Microsoft.Extensions.Configuration.Json": "1.1.0",
+    "NETStandard.Library": "1.6.1",
+    "System.IO.FileSystem.Watcher": "4.3.0"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
