@@ -20,7 +20,7 @@ namespace Mmarab.CqsExample.UnitTests
         public void AddBasketItem_Basket_BasketItemAdded()
         {
             var basket = new Basket(Guid.NewGuid());
-            var item = new Item(Guid.NewGuid(), 12.99m);
+            var item = new Item(Guid.NewGuid(), 12.99m,1);
             basket.AddItem(item);
 
             Assert.Equal(1, basket.GetItems().Count());
@@ -31,7 +31,7 @@ namespace Mmarab.CqsExample.UnitTests
         {
             var itemId = Guid.NewGuid();
             var basket = new Basket(Guid.NewGuid());
-            basket.AddItem(new Item(itemId, 12.99m));
+            basket.AddItem(new Item(itemId, 12.99m,1));
             basket.DeleteItem(itemId);
 
             Assert.Equal(0, basket.GetItems().Count());
@@ -42,7 +42,7 @@ namespace Mmarab.CqsExample.UnitTests
         {
             var itemId = Guid.NewGuid();
             var basket = new Basket(Guid.NewGuid());
-            basket.AddItem(new Item(itemId, 12.99m));
+            basket.AddItem(new Item(itemId, 12.99m,1));
             
             Assert.Equal(12.99m, basket.GetTotal());
         }
