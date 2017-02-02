@@ -30,5 +30,10 @@ namespace Mmarab.CqsExample.Models
         {
             return _items.Sum(s => s.ItemPrice);
         }
+
+        public IEnumerable<Item> GetItems()
+        {
+            return _items;
+        }
     }
 }
