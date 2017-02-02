@@ -43,10 +43,10 @@ namespace Mmarab.CqsExample.Api
 
         [HttpPost]
         [Route("{id}/items/")]
-        public async System.Threading.Tasks.Task<IActionResult> CreateBasketItem()
+        public async System.Threading.Tasks.Task<IActionResult> CreateBasketItem(string id, [FromBody] int productId, [FromBody]int quantity)
         {
-        
-            return Ok(null);
+            await Command.Execute(new CreateBasketItem(Guid.Parse(id), productId, quantity));
+            return Created("http://localhost:41475/v1/api/baskets/" + id, null);
         }
 
         [HttpDelete]
