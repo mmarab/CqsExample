@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Mmarab.CqsExample.Application.Commands.Contracts
 {
-    public class CreateBasketCriteria
+    public class CreateBasketCommand
     {
         public Guid Id { get; }
     
-        public CreateBasketCriteria(Guid id)
+        public CreateBasketCommand(Guid id)
         {
             Id = id;
         }

@@ -11,7 +11,7 @@ namespace Mmarab.CqsExample.Configuration.AutofacModules
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<InMemoryBasketRepository>().As<IBasketRepository>();
+            builder.RegisterType<InMemoryBasketRepository>().As<IBasketRepository>().SingleInstance();
             builder.RegisterType<GuidGenerator>().As<IGenerateIdentifier>();
             builder.Register(x => ConfigurationRootFactoryMethod()).SingleInstance();
         }

@@ -8,5 +8,6 @@ namespace Mmarab.CqsExample.Models
     public interface IBasketRepository
     {
         Task Commit(Basket basket);
+        Task<Basket> Load(Guid id);
     }
 }

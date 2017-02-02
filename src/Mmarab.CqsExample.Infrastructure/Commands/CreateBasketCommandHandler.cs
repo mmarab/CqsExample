@@ -8,7 +8,7 @@ using Mmarab.CqsExample.Models;
 
 namespace Mmarab.CqsExample.Infrastructure.Commands
 {
-    public class CreateBasketCommandHandler : ICommandHandler<CreateBasketCriteria>
+    public class CreateBasketCommandHandler : ICommandHandler<CreateBasketCommand>
     {
         private readonly IBasketRepository _basketRepository;
 
@@ -17,7 +17,7 @@ namespace Mmarab.CqsExample.Infrastructure.Commands
             _basketRepository = basketRepository;
         }
 
-        public async Task Handle(CreateBasketCriteria command)
+        public async Task Handle(CreateBasketCommand command)
         {
             var basket = new Basket(command.Id);
             await _basketRepository.Commit(basket);
