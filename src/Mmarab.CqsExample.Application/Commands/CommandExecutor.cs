@@ -6,12 +6,10 @@ namespace Mmarab.CqsExample.Application.Commands
     public class CommandExecutor : ICommandExecutor
     {
         private readonly ICommandHandlerFactory _commandHandlerFactory;
-        private readonly ILogger _logger;
 
-        public CommandExecutor(ICommandHandlerFactory commandHandlerFactory, ILogger logger)
+        public CommandExecutor(ICommandHandlerFactory commandHandlerFactory)
         {
             _commandHandlerFactory = commandHandlerFactory;
-            _logger = logger;
         }
 
         public async Task Execute<TCommand>(TCommand command)
@@ -21,10 +19,6 @@ namespace Mmarab.CqsExample.Application.Commands
             try
             {
                 await handler.Handle(command);
-            }
-            catch (Exception ex)
-            {
-                await _logger.Error(handler.GetType().ToString(), ex);
             }
             finally
             {

@@ -1,5 +1,9 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using System;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using Mmarab.CqsExample.Application;
+using Mmarab.CqsExample.Application.Commands;
+using Mmarab.CqsExample.Application.Commands.Contracts;
 using Mmarab.CqsExample.Application.Queries;
 using Mmarab.CqsExample.Application.Validation;
 
@@ -9,14 +13,21 @@ namespace Mmarab.CqsExample.Api
     [Route("v1/api/baskets/")]
     public class BasketController : BaseController
     {
-        public BasketController(IQueryExecutor query, IModelValidationExecutor modelValidation) : base(query, modelValidation){}
+        private readonly IGenerateIdentifier _generateIdentifier;
+        public BasketController(IQueryExecutor query, ICommandExecutor command, IModelValidationExecutor modelValidation, IGenerateIdentifier generateIdentifier)
+            : base(query, command, modelValidation)
+        {
+            _generateIdentifier = generateIdentifier;
+        }
 
         [HttpPost]
         [Route("")]
         public async System.Threading.Tasks.Task<IActionResult> CreateBasket()
         {
+            var guid = _generateIdentifier.Generate();
+            await Command.Execute(new CreateBasketCriteria(guid));
 
-            return Ok(null);
+            return Created("http://localhost:41475/v1/api/baskets/"+guid, null);
         }
 
         [HttpGet]
