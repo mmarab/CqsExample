@@ -1,6 +1,8 @@
 ﻿using System.IO;
 using Autofac;
 using Microsoft.Extensions.Configuration;
+using Mmarab.CqsExample.Application;
+using Mmarab.CqsExample.Infrastructure;
 
 namespace Mmarab.CqsExample.Configuration.AutofacModules
 {
@@ -8,6 +10,7 @@ namespace Mmarab.CqsExample.Configuration.AutofacModules
     {
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterType<IGenerateIdentifier>().As<GuidGenerator>();
             builder.Register(x => ConfigurationRootFactoryMethod()).SingleInstance();
         }
 
