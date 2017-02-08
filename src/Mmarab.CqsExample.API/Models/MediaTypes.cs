@@ -1,4 +1,4 @@
-﻿namespace Mmarab.CqsExample.Models
+﻿namespace Mmarab.CqsExample.Api.Models
 {
     public static class MediaTypes
     {

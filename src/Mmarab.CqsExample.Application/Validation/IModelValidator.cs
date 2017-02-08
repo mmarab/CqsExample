@@ -1,4 +1,5 @@
-﻿using Mmarab.CqsExample.Models;
+﻿using Mmarab.CqsExample.Api.Models;
+using Mmarab.CqsExample.Models;
 
 namespace Mmarab.CqsExample.Application.Validation
 {

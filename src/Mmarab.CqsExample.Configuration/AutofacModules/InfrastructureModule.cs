@@ -2,9 +2,9 @@
 using Autofac;
 using Microsoft.Extensions.Configuration;
 using Mmarab.CqsExample.Application;
+using Mmarab.CqsExample.Models;
 using Mmarab.CqsExample.Infrastructure;
 using Mmarab.CqsExample.Infrastructure.MockProductService;
-using Mmarab.CqsExample.Models;
 
 namespace Mmarab.CqsExample.Configuration.AutofacModules
 {

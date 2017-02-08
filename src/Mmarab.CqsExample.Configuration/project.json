@@ -3,13 +3,13 @@
 
   "dependencies": {
     "Autofac.Extensions.DependencyInjection": "4.0.0",
-    "Mmarab.CqsExample.API": "1.0.0-*",
-    "Mmarab.CqsExample.Application": "1.0.0-*",
-    "Mmarab.CqsExample.Infrastructure": "1.0.0-*",
     "Microsoft.AspNetCore.Diagnostics": "1.1.0",
     "Microsoft.AspNetCore.Mvc": "1.1.0",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.1.0",
+    "Microsoft.Extensions.Configuration": "1.1.0",
     "Microsoft.Extensions.Logging.Console": "1.1.0",
+    "Mmarab.CqsExample.Application": "1.0.0",
+    "Mmarab.CqsExample.Infrastructure": "1.0.0",
     "NETStandard.Library": "1.6.1",
     "Swashbuckle": "6.0.0-beta902"
   },

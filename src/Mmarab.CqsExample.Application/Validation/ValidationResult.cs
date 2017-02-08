@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Mmarab.CqsExample.Models
+namespace Mmarab.CqsExample.Api.Models
 {
     public class ValidationResult
     {

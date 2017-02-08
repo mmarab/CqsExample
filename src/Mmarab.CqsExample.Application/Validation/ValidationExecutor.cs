@@ -1,5 +1,5 @@
-﻿using System.Linq;
-using Mmarab.CqsExample.Models;
+﻿using Mmarab.CqsExample.Api.Models;
+using System.Linq;
 
 namespace Mmarab.CqsExample.Application.Validation
 {

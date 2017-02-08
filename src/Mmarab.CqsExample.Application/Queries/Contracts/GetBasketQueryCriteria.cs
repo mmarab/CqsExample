@@ -2,11 +2,11 @@
 
 namespace Mmarab.CqsExample.Application.Queries.Contracts
 {
-    public class GetBasketQuery
+    public class GetBasketQueryCriteria
     {
         public Guid Id { get; }
 
-        public GetBasketQuery(Guid id)
+        public GetBasketQueryCriteria(Guid id)
         {
             Id = id;
         }

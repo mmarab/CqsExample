@@ -2,8 +2,6 @@
 using Autofac;
 using Mmarab.CqsExample.Application.Commands;
 using Mmarab.CqsExample.Configuration.Factories;
-using Mmarab.CqsExample.Infrastructure;
-using Mmarab.CqsExample.Models;
 using Module = Autofac.Module;
 
 namespace Mmarab.CqsExample.Configuration.AutofacModules
