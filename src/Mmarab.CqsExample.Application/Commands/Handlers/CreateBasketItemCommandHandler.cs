@@ -2,18 +2,18 @@
 using Mmarab.CqsExample.Application;
 using Mmarab.CqsExample.Application.Commands;
 using Mmarab.CqsExample.Application.Commands.Contracts;
-using Mmarab.CqsExample.Infrastructure.MockProductService;
 using Mmarab.CqsExample.Models;
+using Mmarab.CqsExample.DomainModels;
 
 namespace Mmarab.CqsExample.Infrastructure.Commands
 {
     public class CreateBasketItemCommandHandler : ICommandHandler<CreateBasketItem>
     {
         private readonly IBasketRepository _basketRepository;
-        private readonly IProductDataService _productDataService;
+        private readonly IProductRepository _productDataService;
         private readonly IGenerateIdentifier _generateIdentifier;
 
-        public CreateBasketItemCommandHandler(IBasketRepository basketRepository, IProductDataService productDataService, IGenerateIdentifier generateIdentifier)
+        public CreateBasketItemCommandHandler(IBasketRepository basketRepository, IProductRepository productDataService, IGenerateIdentifier generateIdentifier)
         {
             _basketRepository = basketRepository;
             _productDataService = productDataService;

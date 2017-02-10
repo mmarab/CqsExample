@@ -1,11 +1,10 @@
 ﻿using System.Reflection;
 using Autofac;
-using Mmarab.CqsExample.Application;
 using Mmarab.CqsExample.Application.Queries;
-using Mmarab.CqsExample.Configuration.Factories;
+using Mmarab.CqsExample.Configuration.IoC.Factories;
 using Module = Autofac.Module;
 
-namespace Mmarab.CqsExample.Configuration.AutofacModules
+namespace Mmarab.CqsExample.Configuration.IoC.AutofacModules
 {
     public class QueryExecutionModule : Module
     {

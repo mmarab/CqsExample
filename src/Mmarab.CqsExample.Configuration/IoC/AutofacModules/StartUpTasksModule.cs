@@ -1,9 +1,9 @@
 ﻿using System.Reflection;
 using Autofac;
-using Mmarab.CqsExample.Configuration.Tasks;
+using Mmarab.CqsExample.Configuration.IoC.Tasks;
 using Module = Autofac.Module;
 
-namespace Mmarab.CqsExample.Configuration.AutofacModules
+namespace Mmarab.CqsExample.Configuration.IoC.AutofacModules
 {
     public class StartUpTasksModule : Module
     {

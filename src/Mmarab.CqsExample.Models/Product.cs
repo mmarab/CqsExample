@@ -1,4 +1,4 @@
-﻿namespace Mmarab.CqsExample.Infrastructure.MockProductService
+﻿namespace Mmarab.CqsExample.DomainModels
 {
     public class Product
     {

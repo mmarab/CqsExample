@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using Mmarab.CqsExample.Application;
+using Mmarab.CqsExample.DomainModels;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Mmarab.CqsExample.Infrastructure.MockProductService
 {
-    public class ProductDataService : IProductDataService
+    public class ProductDataService : IProductRepository
     {
         private readonly List<Product> _mockList = new List<Product> {
             new Product("Shirt", 12.99m, 1),

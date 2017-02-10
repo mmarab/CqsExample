@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Autofac;
 using Mmarab.CqsExample.Application.Validation;
 
-namespace Mmarab.CqsExample.Configuration.Factories
+namespace Mmarab.CqsExample.Configuration.IoC.Factories
 {
     public class ModelValidatorFactory : IModelValidatorFactory
     {

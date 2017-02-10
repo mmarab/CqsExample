@@ -1,4 +1,4 @@
-﻿namespace Mmarab.CqsExample.Configuration.Tasks
+﻿namespace Mmarab.CqsExample.Configuration.IoC.Tasks
 {
     public interface IStartUp
     {

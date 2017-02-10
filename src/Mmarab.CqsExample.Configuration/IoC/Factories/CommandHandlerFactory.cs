@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using Mmarab.CqsExample.Application.Commands;
 
-namespace Mmarab.CqsExample.Configuration.Factories
+namespace Mmarab.CqsExample.Configuration.IoC.Factories
 {
     public class CommandHandlerFactory : ICommandHandlerFactory
     {
