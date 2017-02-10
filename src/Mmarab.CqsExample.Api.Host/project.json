@@ -6,7 +6,7 @@
     "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
     "Microsoft.Extensions.Logging.Console": "1.1.0",
     "Microsoft.NETCore.App": "1.1.0",
-    "Mmarab.CqsExample.Configuration": "1.0.0"
+    "Mmarab.CqsExample.API": "1.0.0-*"
   },
 
   "tools": {

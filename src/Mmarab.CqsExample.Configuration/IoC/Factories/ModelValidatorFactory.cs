@@ -1,8 +1,8 @@
-using System.Collections.Generic;
 using Autofac;
 using Mmarab.CqsExample.Application.Validation;
+using System.Collections.Generic;
 
-namespace Mmarab.CqsExample.Configuration.IoC.Factories
+namespace Mmarab.CqsExample.IoC.IoC.Factories
 {
     public class ModelValidatorFactory : IModelValidatorFactory
     {

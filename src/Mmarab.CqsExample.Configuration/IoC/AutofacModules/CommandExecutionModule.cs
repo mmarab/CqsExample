@@ -1,11 +1,10 @@
-﻿using System.Reflection;
-using Autofac;
-using Mmarab.CqsExample.Application.Commands;
+﻿using Autofac;
 using Mmarab.CqsExample.Application.Commands.Executor;
-using Mmarab.CqsExample.Configuration.IoC.Factories;
+using Mmarab.CqsExample.IoC.IoC.Factories;
+using System.Reflection;
 using Module = Autofac.Module;
 
-namespace Mmarab.CqsExample.Configuration.IoC.AutofacModules
+namespace Mmarab.CqsExample.IoC.IoC.AutofacModules
 {
     public class CommandExecutionModule : Module
     {

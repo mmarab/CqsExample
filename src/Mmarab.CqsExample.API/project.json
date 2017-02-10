@@ -3,9 +3,13 @@
   "version": "1.0.0-*",
 
   "dependencies": {
+    "Microsoft.AspNetCore.Diagnostics": "1.1.0",
     "Microsoft.AspNetCore.Mvc": "1.1.0",
     "Mmarab.CqsExample.Application": "1.0.0-*",
-    "NETStandard.Library": "1.6.1"
+    "Mmarab.CqsExample.Configuration": "1.0.0-*",
+    "Mmarab.CqsExample.Models": "1.0.0-*",
+    "NETStandard.Library": "1.6.1",
+    "Swashbuckle": "6.0.0-beta902"
   },
 
   "frameworks": {

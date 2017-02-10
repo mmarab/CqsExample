@@ -1,13 +1,13 @@
-﻿using System.IO;
-using Autofac;
+﻿using Autofac;
 using Microsoft.Extensions.Configuration;
 using Mmarab.CqsExample.Application;
 using Mmarab.CqsExample.DomainModels;
 using Mmarab.CqsExample.Infrastructure;
 using Mmarab.CqsExample.Infrastructure.MockProductService;
 using Mmarab.CqsExample.Models;
+using System.IO;
 
-namespace Mmarab.CqsExample.Configuration.IoC.AutofacModules
+namespace Mmarab.CqsExample.IoC.IoC.AutofacModules
 {
     public class InfrastructureModule : Module
     {

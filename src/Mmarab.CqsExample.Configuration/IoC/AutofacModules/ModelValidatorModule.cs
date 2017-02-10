@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
+using Mmarab.CqsExample.IoC.IoC.Factories;
+using Module = Autofac.Module;
 using Autofac;
 using Mmarab.CqsExample.Application.Validation;
-using Mmarab.CqsExample.Configuration.IoC.Factories;
-using Module = Autofac.Module;
 
-namespace Mmarab.CqsExample.Configuration.IoC.AutofacModules
+namespace Mmarab.CqsExample.IoC.IoC.AutofacModules
 {
     public class ModelValidatorModule : Module
     {

@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using Microsoft.AspNetCore.Hosting;
-using Mmarab.CqsExample.Configuration;
 
 namespace Mmarab.CqsExample.Api.Host
 {
