@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Mmarab.CqsExample.Application.Queries;
+using Mmarab.CqsExample.Application.Queries.Executor;
 
 namespace Mmarab.CqsExample.Configuration.IoC.Factories
 {

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
-namespace Mmarab.CqsExample.Application.Commands
+namespace Mmarab.CqsExample.Application.Commands.Executor
 {
     public class CommandExecutor : ICommandExecutor
     {

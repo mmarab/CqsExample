@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using Autofac;
 using Mmarab.CqsExample.Application.Queries;
+using Mmarab.CqsExample.Application.Queries.Executor;
 using Mmarab.CqsExample.Configuration.IoC.Factories;
 using Module = Autofac.Module;
 

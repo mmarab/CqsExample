@@ -2,10 +2,10 @@
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Mmarab.CqsExample.Application;
-using Mmarab.CqsExample.Application.Commands;
 using Mmarab.CqsExample.Application.Commands.Contracts;
-using Mmarab.CqsExample.Application.Queries;
+using Mmarab.CqsExample.Application.Commands.Executor;
 using Mmarab.CqsExample.Application.Queries.Contracts;
+using Mmarab.CqsExample.Application.Queries.Executor;
 using Mmarab.CqsExample.Application.Validation;
 
 

@@ -1,6 +1,4 @@
-﻿using Mmarab.CqsExample.Api.Models;
-
-namespace Mmarab.CqsExample.Application.Validation
+﻿namespace Mmarab.CqsExample.Application.Validation
 {
     public interface IModelValidationExecutor
     {

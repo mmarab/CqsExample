@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Mmarab.CqsExample.Application.Commands
+namespace Mmarab.CqsExample.Application.Commands.Executor
 {
     public abstract class CommandHandler<TCommand> : ICommandHandler<TCommand>
     {

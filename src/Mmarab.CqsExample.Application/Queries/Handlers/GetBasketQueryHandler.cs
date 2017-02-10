@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using Mmarab.CqsExample.Application.Queries;
 using Mmarab.CqsExample.Application.Queries.Contracts;
+using Mmarab.CqsExample.Application.Queries.Executor;
 using Mmarab.CqsExample.Models;
 
-namespace Mmarab.CqsExample.Infrastructure.Queries
+namespace Mmarab.CqsExample.Application.Queries.Handlers
 {
     public class GetBasketQueryHandler : Query<GetBasketQueryCriteria, Basket>
     {

@@ -1,4 +1,4 @@
-﻿namespace Mmarab.CqsExample.Application.Queries
+﻿namespace Mmarab.CqsExample.Application.Queries.Executor
 {
     public class NullCriteria
     {

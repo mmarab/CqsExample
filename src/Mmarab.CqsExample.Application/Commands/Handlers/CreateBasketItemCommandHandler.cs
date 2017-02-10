@@ -1,11 +1,10 @@
 ﻿using System.Threading.Tasks;
-using Mmarab.CqsExample.Application;
-using Mmarab.CqsExample.Application.Commands;
 using Mmarab.CqsExample.Application.Commands.Contracts;
-using Mmarab.CqsExample.Models;
+using Mmarab.CqsExample.Application.Commands.Executor;
 using Mmarab.CqsExample.DomainModels;
+using Mmarab.CqsExample.Models;
 
-namespace Mmarab.CqsExample.Infrastructure.Commands
+namespace Mmarab.CqsExample.Application.Commands.Handlers
 {
     public class CreateBasketItemCommandHandler : ICommandHandler<CreateBasketItem>
     {

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Mmarab.CqsExample.Application.Commands;
+﻿using System.Threading.Tasks;
 using Mmarab.CqsExample.Application.Commands.Contracts;
+using Mmarab.CqsExample.Application.Commands.Executor;
 using Mmarab.CqsExample.Models;
 
-namespace Mmarab.CqsExample.Infrastructure.Commands
+namespace Mmarab.CqsExample.Application.Commands.Handlers
 {
     public class CreateBasketCommandHandler : ICommandHandler<CreateBasketCommand>
     {

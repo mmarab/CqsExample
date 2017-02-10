@@ -1,4 +1,4 @@
-﻿namespace Mmarab.CqsExample.Application.Commands
+﻿namespace Mmarab.CqsExample.Application.Commands.Executor
 {
     public enum CommandStatus
     {

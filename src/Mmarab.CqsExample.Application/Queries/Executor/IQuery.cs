@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Mmarab.CqsExample.Application.Queries
+namespace Mmarab.CqsExample.Application.Queries.Executor
 {
     public interface IQuery
     {
