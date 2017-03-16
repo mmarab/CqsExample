@@ -10,7 +10,7 @@ namespace Mmarab.CqsExample.IoC
         public static System.IServiceProvider Create(IServiceCollection services)
         {
             var container = new ContainerBuilder();
-            var modulesAssembly = Assembly.Load(new AssemblyName("Mmarab.CqsExample.Configuration"));
+            var modulesAssembly = Assembly.Load(new AssemblyName("Mmarab.CqsExample.IoC"));
             container.RegisterAssemblyModules(modulesAssembly);
             container.Populate(services);
             return container.Build().Resolve<System.IServiceProvider>();

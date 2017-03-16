@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Mmarab.CqsExample.Application.Commands.Contracts;
 using Mmarab.CqsExample.Application.Commands.Executor;
-using Mmarab.CqsExample.DomainModels;
 using Mmarab.CqsExample.Models;
+using Mmarab.CqsExample.DomainModels;
 
 namespace Mmarab.CqsExample.Application.Commands.Handlers
 {

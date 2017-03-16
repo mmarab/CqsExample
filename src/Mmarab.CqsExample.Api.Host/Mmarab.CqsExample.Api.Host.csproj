@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>Mmarab.CqsExample.Api.Host</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Mmarab.CqsExample.Api.Host</PackageId>
+    <RuntimeIdentifiers>win10-x64;win7-x64</RuntimeIdentifiers>
+    <RuntimeFrameworkVersion>1.1.1</RuntimeFrameworkVersion>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration.Tools" Version="1.1.0-preview4-final" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mmarab.CqsExample.API\Mmarab.CqsExample.API.csproj" />
+    <ProjectReference Include="..\Mmarab.CqsExample.Application\Mmarab.CqsExample.Application.csproj" />
+    <ProjectReference Include="..\Mmarab.CqsExample.DomainModels\Mmarab.CqsExample.DomainModels.csproj" />
+    <ProjectReference Include="..\Mmarab.CqsExample.Infrastructure\Mmarab.CqsExample.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

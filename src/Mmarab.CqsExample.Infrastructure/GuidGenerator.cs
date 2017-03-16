@@ -1,5 +1,6 @@
-﻿using System;
-using Mmarab.CqsExample.Application;
+﻿using Mmarab.CqsExample.Application;
+using System;
+
 
 namespace Mmarab.CqsExample.Infrastructure
 {
