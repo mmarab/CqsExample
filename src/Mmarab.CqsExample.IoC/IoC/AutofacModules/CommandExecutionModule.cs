@@ -11,7 +11,7 @@ namespace Mmarab.CqsExample.IoC.IoC.AutofacModules
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<CommandExecutor>().As<ICommandExecutor>();
-            builder.RegisterAssemblyTypes(Assembly.Load(new AssemblyName("Mmarab.CqsExample.Infrastructure")))
+            builder.RegisterAssemblyTypes(Assembly.Load(new AssemblyName("Mmarab.CqsExample.Application")))
                .AsClosedTypesOf(typeof(ICommandHandler<>));
             builder.RegisterType<CommandHandlerFactory>().As<ICommandHandlerFactory>();
         }

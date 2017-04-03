@@ -17,7 +17,7 @@ namespace Mmarab.CqsExample.Application.Commands.Handlers
         public async Task Handle(CreateBasketCommand command)
         {
             var basket = new Basket(command.Id);
-            await _basketRepository.Commit(basket);
+            await _basketRepository.Commit(basket, null);
         }
     }
 }

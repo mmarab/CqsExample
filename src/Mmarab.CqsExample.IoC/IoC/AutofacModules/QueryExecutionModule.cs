@@ -12,7 +12,7 @@ namespace Mmarab.CqsExample.IoC.IoC.AutofacModules
         {
             builder.RegisterType<QueryFactory>().As<IQueryFactory>();
             builder.RegisterType<QueryExecutor>().As<IQueryExecutor>();
-            builder.RegisterAssemblyTypes(Assembly.Load(new AssemblyName("Mmarab.CqsExample.Infrastructure")))
+            builder.RegisterAssemblyTypes(Assembly.Load(new AssemblyName("Mmarab.CqsExample.Application")))
                .AsClosedTypesOf(typeof(IQuery<,>));
         }
     }

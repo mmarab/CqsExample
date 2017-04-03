@@ -1,29 +1,55 @@
-﻿using System;
+﻿using Mmarab.CqsExample.DomainModels;
+using Mmarab.CqsExample.DomainModels.Events;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace Mmarab.CqsExample.Models
 {
-    public class Basket
+    public class Basket : AggregateRoot
     {
-        private readonly List<Item> _items; 
-        public Guid Id { get; }
+        private List<Item> _items;
+
+        public Guid _id;
+
+        public Basket() { }
+
+        public override Guid Id
+        {
+            get { return _id; }
+        }
 
         public Basket(Guid id)
         {
+           ApplyChange(new BasketCreatedEvent(id));
+        }
+
+        private void Apply(BasketCreatedEvent @event)
+        {
             _items = new List<Item>();
-            Id = id;
+            _id = @event.id;
         }
 
         public void AddItem(Item item)
         {
-            _items.Add(item);
+            ApplyChange(new BasketItemCreatedEvent(item));
+        }
+
+        private void Apply(BasketItemCreatedEvent @event)
+        {
+            _items.Add(@event.item);
         }
 
         public void DeleteItem(Guid itemId)
         {
-            _items.RemoveAll(r => r.Id == itemId);
+           
+            ApplyChange(new BasketItemDeletedEvent(itemId));
+        }
+
+        private void Apply(BasketItemDeletedEvent @event)
+        {
+            _items.RemoveAll(r => r.Id == @event.itemId);
         }
 
         public decimal GetTotal()

@@ -14,7 +14,8 @@ namespace Mmarab.CqsExample.IoC.IoC.AutofacModules
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<ProductDataService>().As<IProductRepository>().SingleInstance();
-            builder.RegisterType<InMemoryBasketRepository>().As<IBasketRepository>().SingleInstance();
+            builder.RegisterType<BasketRepository>().As<IBasketRepository>().SingleInstance();
+            builder.RegisterType<EventStore>().As<IEventStore>().SingleInstance();
             builder.RegisterType<GuidGenerator>().As<IGenerateIdentifier>();
             builder.Register(x => ConfigurationRootFactoryMethod()).SingleInstance();
         }

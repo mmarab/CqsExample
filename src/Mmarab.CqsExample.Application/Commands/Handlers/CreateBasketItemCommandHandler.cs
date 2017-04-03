@@ -24,7 +24,7 @@ namespace Mmarab.CqsExample.Application.Commands.Handlers
             var product = await _productDataService.Get(command.ProductId);
             var basket = await _basketRepository.Load(command.BasketId);
             basket.AddItem(new Item(_generateIdentifier.Generate(),product.Price, command.Quantity));
-            await _basketRepository.Commit(basket);
+            await _basketRepository.Commit(basket, basket.Version);
         }
     }
 }
